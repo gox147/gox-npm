@@ -1,27 +1,33 @@
 {
-  "name": "@goxjs/goxjs-mobile-ios-iphonesimulator-arm64",
+  "name": "@goxjs/goxjs",
   "version": "0.20.0",
-  "description": "Gox 移动端预编译库 —— iOS 模拟器 arm64（libgox.a，c-archive + libgox.h）。@goxjs/goxjs 的平台子包（M11）",
+  "description": "Gox — 用 Go 从零实现的 JavaScript 运行时（lexer → parser → 字节码 VM），单二进制零外部依赖",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gox147/Gox.git"
   },
+  "bin": {
+    "goxjs": "bin/gox.js",
+    "gox": "bin/gox.js"
+  },
   "files": [
-    "libgox.a",
-    "libgox.h",
-    "manifest.json"
+    "bin/gox.js",
+    "binaries/"
   ],
+  "engines": {
+    "node": ">=14"
+  },
   "publishConfig": {
     "access": "public"
   },
   "keywords": [
-    "gox",
     "javascript",
     "runtime",
-    "mobile",
-    "ios",
-    "iphonesimulator",
-    "arm64"
+    "interpreter",
+    "bytecode-vm",
+    "go",
+    "gui",
+    "jsx"
   ]
 }
